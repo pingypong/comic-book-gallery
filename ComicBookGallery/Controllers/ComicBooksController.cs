@@ -12,8 +12,8 @@ namespace ComicBookGallery.Controllers
     {
         public ActionResult Detail()
         {
-            
-            return View();
+            ComicBookRepository getComicBook = new ComicBookRepository();
+            return View(getComicBook.GetComicBook(1));
         }
 
     }
