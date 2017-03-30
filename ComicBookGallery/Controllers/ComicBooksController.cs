@@ -8,14 +8,10 @@ namespace ComicBookGallery.Controllers
 {
     public class ComicBooksController : Controller
     {
-       public ActionResult Detail()
+        public ActionResult Detail()
         {
-            if(DateTime.Today.DayOfWeek == DayOfWeek.Wednesday)
-            {
-                return Redirect("/");
-            }
-            return Content("Hello From the ComicBooksController!");
-
+            return View();
         }
+
     }
 }
